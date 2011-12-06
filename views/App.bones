@@ -11,7 +11,6 @@ var start = _.once(function() {
         }
         _loadUrl.call(this, e);
     }
-
     Bones.start({pushState: true, root: ""});
 });
 
@@ -30,21 +29,6 @@ var adminSetup = _.once(function() {
     });
     Bones.admin.render();
     Bones.user.status();
-});
-
-// Sets up country search form in footer
-// -------------------------------------
-var searchSetup = _.once(function() {
-    var view = new views.CountrySearch({
-        model: new models.CountrySearch()
-    });
-    view.render();
-});
-
-var feedbackSetup = _.once(function() {
-    $('#feedbacktab .button').click(function() {
-        $('#feedbacktab').toggleClass('open');
-    })
 });
 
 // Sets up key tracking on client
@@ -75,8 +59,6 @@ view = Backbone.View.extend({
     },
     initialize: function() {
         if (!Bones.server) {
-            feedbackSetup();
-            searchSetup();
             adminSetup();
             keyTracking();
         }
