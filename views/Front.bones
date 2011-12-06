@@ -5,6 +5,7 @@ view = views.Main.extend({
         Bones.user && Bones.user.bind('auth:status', this.setupPanel);
     },
     render: function() {
+        $(this.el).empty().append(templates.Front({message: 'Hello World'}));
         return this;
     },
     attach: function() {

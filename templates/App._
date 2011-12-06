@@ -12,7 +12,9 @@
   <link rel='stylesheet' href='/assets/bones-admin/style.css?<%= version %>' media='screen' />
 </head>
 <body>
-  Hello World.
+  <div id='page' class='limiter clearfix'>
+    <div id='main'><%= main %></div>
+  </div>
   <script><%= startup %></script>
 </body>
 </html>
