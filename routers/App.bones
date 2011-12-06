@@ -1,9 +1,13 @@
 router = Backbone.Router.extend({
     routes: {
-        '/' : 'front'
+        '/' : 'front',
+        '/about': 'about'
     },
     front: function() {
         this.send(views.Front);
+    },
+    about: function() {
+        this.send(views.About);
     },
     send: function(view) {
         var options = arguments.length > 1 ? arguments[1] : {};
