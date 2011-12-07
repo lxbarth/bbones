@@ -1,0 +1,15 @@
+<form>
+<div class='attribute name'>
+    <label for='name'>Name</label>
+    <input type='text' name='name' />
+    <div class='description'>The name of the <%= documentType %> - you will be able to change it at any time.</div>
+</div>
+<div class='attribute id'>
+    <label for='id'>Path</label>
+    <div class='path-prefix'><%= pathPrefix %></div><input type='text' name='id'/>
+    <div class='description'>The path of the <%= documentType %>. This path cannot be changed later, but you can always delete a <%= documentType %> you have created. Use only lower case letters and dashes (-) here.</div>
+</div>
+<div class='buttons'>
+    <input type='submit' value='Create <%= documentType %>' />
+</div>
+</form>

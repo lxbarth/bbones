@@ -20,6 +20,9 @@
       <li>
         <a href='/about'>About</a>
       </li>
+      <li>
+        <a href='/page/test'>Test</a>
+      </li>
     </ul>
   </div>
   <div id='page' class='limiter clearfix'>

@@ -1,0 +1,7 @@
+{
+    "id": "test",
+    "name": "Test Page",
+    "author": "admin",
+    "created": "1323229463",
+    "body": "Test page.\n\nOnce you create a user, you should be able to log in and edit this page."
+}

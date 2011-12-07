@@ -1,0 +1,21 @@
+<h2><em>Edit</em> <%= render('name') %></h2>
+
+<div class='left'>
+    <div class='attribute sidebar'>
+        <h4 class='label'><%= title('sidebar') %></h4>
+        <div class='editable <%= render('id') %> editable-sidebar'><%= render('sidebar') %></div>
+    </div>
+</div>
+
+<div class='main with-left'>
+    <div class='attribute name'>
+        <h4 class='label'><%= title('name') %><small> (Required)</small></h4>
+        <div>
+        <span class='editable <%= render('id') %> editable-name'><%= render('name') %></span>
+        </div>
+    </div>
+    <div class='attribute body'>
+        <h4 class='label'><%= title('body') %></h4>
+        <div class='editable <%= render('id') %> editable-body'><%= render('body') %></div>
+    </div>
+</div>

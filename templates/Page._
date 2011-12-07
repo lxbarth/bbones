@@ -1,0 +1,10 @@
+<div class ='document page container'>
+  <div class='attribute name'>
+    <h2>
+    <span class='editable <%= render('id') %> editable-name'><%= render('name') %></span>
+    </h2>
+  </div>
+  <div class='attribute body'>
+    <div class='editable <%= render('id') %> editable-body'><%= render('body') %></div>
+  </div>
+</div>
