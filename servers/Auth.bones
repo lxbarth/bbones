@@ -13,4 +13,4 @@ servers.Auth.prototype.access = function(req, res, next) {
         }
     }
     return next();
-}
+};
